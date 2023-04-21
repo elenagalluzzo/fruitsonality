@@ -39,9 +39,6 @@ class QuizViewController: UIViewController {
         }
         updateQuestion()
         fruitQuizModel.trackAnswers(chosenOption: chosenOption)
-//        if fruitQuizModel.questionNumber == 5 {
-//            endQuiz()
-//        }
     }
     
     func updateQuestion() {
