@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F3689C8629E5C54100CD4BBB /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuizViewController.swift; path = Controllers/QuizViewController.swift; sourceTree = "<group>"; };
-		F3B3082B29DF0C71002903BD /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Controllers/ResultViewController.swift; sourceTree = "<group>"; };
+		F3689C8629E5C54100CD4BBB /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		F3B3082B29DF0C71002903BD /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F3C623F929DE1204008E6DB9 /* Fruitsonality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruitsonality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C623FC29DE1204008E6DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C623FE29DE1204008E6DB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F36373322A00605A0041D04E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3C6241029DE5C4D008E6DB9 /* QuizModel.swift */,
+				F3C6241229DE5C95008E6DB9 /* FruitQuizModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F36373332A0060600041D04E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3C6240229DE1204008E6DB9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F36373342A0060670041D04E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3689C8629E5C54100CD4BBB /* QuizViewController.swift */,
+				F3B3082B29DF0C71002903BD /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F3C623F029DE1203008E6DB9 = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +90,9 @@
 			children = (
 				F3C623FC29DE1204008E6DB9 /* AppDelegate.swift */,
 				F3C623FE29DE1204008E6DB9 /* SceneDelegate.swift */,
-				F3C6241029DE5C4D008E6DB9 /* QuizModel.swift */,
-				F3C6241229DE5C95008E6DB9 /* FruitQuizModel.swift */,
-				F3C6240229DE1204008E6DB9 /* Main.storyboard */,
-				F3689C8629E5C54100CD4BBB /* QuizViewController.swift */,
-				F3B3082B29DF0C71002903BD /* ResultViewController.swift */,
+				F36373322A00605A0041D04E /* Models */,
+				F36373342A0060670041D04E /* Controller */,
+				F36373332A0060600041D04E /* View */,
 				F3C6240529DE1207008E6DB9 /* Assets.xcassets */,
 				F3C6240729DE1207008E6DB9 /* LaunchScreen.storyboard */,
 				F3C6240A29DE1207008E6DB9 /* Info.plist */,
