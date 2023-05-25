@@ -18,7 +18,6 @@ class QuizViewController: UIViewController {
     
     var fruitQuizModel = FruitQuizModel()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabelView.layer.cornerRadius = 20
@@ -27,7 +26,6 @@ class QuizViewController: UIViewController {
         option3Button.layer.cornerRadius = 10
         option4Button.layer.cornerRadius = 10
         updateQuestion()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func optionPressed(_ sender: UIButton) {
@@ -47,7 +45,6 @@ class QuizViewController: UIViewController {
         option2Button.setTitle(fruitQuizModel.getOption2(), for: .normal)
         option3Button.setTitle(fruitQuizModel.getOption3(), for: .normal)
         option4Button.setTitle(fruitQuizModel.getOption4(), for: .normal)
-        
     }
     
     func endQuiz() {
@@ -62,10 +59,9 @@ class QuizViewController: UIViewController {
             }
         }
     }
-    
 }
 
-extension QuizViewController: ResultViewDelagate {
+extension QuizViewController: ResultViewDelegate {
     func resetFruitModel() {
         fruitQuizModel = FruitQuizModel()
         updateQuestion()

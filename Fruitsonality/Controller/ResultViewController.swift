@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ResultViewDelagate: AnyObject {
+protocol ResultViewDelegate: AnyObject {
     func resetFruitModel()
 }
 
@@ -18,7 +18,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var fruitImageView: UIImageView!
     @IBOutlet weak var retryButton: UIButton!
     
-    weak var delegate: ResultViewDelagate?
+    weak var delegate: ResultViewDelegate?
     
     var fruitQuizModel: FruitQuizModel?
     
